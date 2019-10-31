@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PINK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="#" alt="logo" class="header_logo">
+        </a>
+        <ul class="header_navigation">
+            <li>
+                <a href="index.html" class="header_navigation-item">Главная</a>
+            </li>
+            <li>
+                <a href="photo.html" class="header_navigation-item">Фотографии</a>
+            </li>
+            <li>
+                <a href="#" class="header_navigation-item">Конкурс</a>
+            </li>
+            <li>
+                <a href="#" class="header_navigation-item">HTML Academy</a>
+            </li>
+        </ul>
+        <p class="header_information">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </header>
+
+    <section class="form">
+        <p class="form_header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+            бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form action="https://echo.htmlacademy.ru">
+            <fieldset class="form_full-name">
+                <label for="last-name" class="form_label">Фамилия:</label>
+                <input type="text" class="form_input" name="last-name" id="last-name" placeholder="Укажите фамилию *">
+
+                <label for="first-name" class="form_label">Имя:</label>
+                <input type="text" class="form_input" name="first-name" id="first-name"
+                    placeholder="Введите ваше имя *">
+
+                <label for="patronymic" class="form_label">Отчество:</label>
+                <input type="text" class="form_input" name="patronymic" id="patronymic"
+                    placeholder="Ну и отчество тоже">
+            </fieldset>
+
+            <fieldset class="form_achievements">
+                <legend class="form_legend">Ваши безбашенные достижения в путешествии</legend>
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="selfi" checked>
+                    <span class="form_item">Сделал селфи с акулой</span>
+                </label>
+
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="beach" checked>
+                    <span class="form_item">Обгорел на пляже</span>
+                </label>
+
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="chak">
+                    <span class="form_item">Видел Чака Норриса</span>
+                </label>
+
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="souvenir">
+                    <span class="form_item">Накупил сувениров</span>
+                </label>
+
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="tower" checked>
+                    <span class="form_item">Удержал башню</span>
+                </label>
+
+                <label>
+                    <input class="form_checkbox" type="checkbox" name="hotel">
+                    <span class="form_item">Разгромил отель</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="form_contacts">
+                <label for="phone-number" class="form_label">Номер телефона</label>
+                <input type="phone" class="form_input" name="phone-number" id="phone-number"
+                    placeholder="Номер, пожалуйста">
+
+                <label for="email" class="form_label">Адрес почты</label>
+                <input type="email" class="form_input" name="email" id="email" placeholder="Введите почту *">
+            </fieldset>
+
+            <fieldset class="form_app">
+                <legend class="form_legend">С каким приложением путешествовали?</legend>
+                <label>
+                    <input type="radio" name="ios" class="form_radio">
+                    <span class="form_item">Pink для iOS</span>
+                </label>
+                <label>
+                    <input type="radio" name="android" class="form_radio">
+                    <span class="form_item">Pink для Android</span>
+                </label>
+                <label>
+                    <input type="radio" name="phone" class="form_radio">
+                    <span class="form_item">Windows Phone</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="form_review">
+                <legend class="form_legend">Опишите свои эмоции</legend>
+                <textarea name="review" cols="30" rows="10"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+
+            <button type="submit" class="form_button">Отправить форму</button>
+            <span class="form_note">* - обязательные поля</span>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <img src="http://placehold.it/150x100" alt="logo">
+        <ul class="footer_links">
+            <li class="footer_link-item">twitter</li>
+            <li class="footer_link-item">facebook</li>
+            <li class="footer_link-item">youtoobe</li>
+        </ul>
+        <span class="footer_information">Разработано HTMLAcademy</span>
+    </footer>
