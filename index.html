@@ -7,37 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PINK</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
-            <img src="#" alt="logo" class="header_logo">
+        <a href="index.html" class="header_logo">
+            <img src="https://user-images.githubusercontent.com/51093088/68088296-d252a500-fe6e-11e9-9c69-215e315f8ad9.png"
+                alt="logo" class="header_logo-image">
         </a>
         <ul class="header_navigation">
-            <li>
+            <li class="header_navigation-list">
                 <a href="#" class="header_navigation-item">Главная</a>
             </li>
-            <li>
+            <li class="header_navigation-list">
                 <a href="photo.html" class="header_navigation-item">Фотографии</a>
             </li>
-            <li>
+            <li class="header_navigation-list">
                 <a href="form.html" class="header_navigation-item">Конкурс</a>
             </li>
-            <li>
+            <li class="header_navigation-list">
                 <a href="#" class="header_navigation-item">HTML Academy</a>
             </li>
         </ul>
     </header>
 
     <section class="download">
-        <button class="download_button">Скачать приложение</button>
-        <div class="download_links">
-            <a href="#" class="download_link-item">Apple</a>
-            <a href="#" class="download_link-item">Android</a>
-            <a href="#" class="download_link-item">Windows</a>
+        <div class="download_image"></div>
+        <div class="download_information">
+            <h2 class="download_header">Взгляните на жизнь иначе!</h2>
+            <button class="download_button">Скачать приложение</button>
+            <div class="download_links">
+                <a href="#" class="download_link-item">
+                    <img src="https://user-images.githubusercontent.com/51093088/68205388-3d20ef00-ffdb-11e9-8eb0-5f1e92472768.png"
+                        alt="Apple">
+                </a>
+                <a href="#" class="download_link-item">
+                    <img src="https://user-images.githubusercontent.com/51093088/68205389-3d20ef00-ffdb-11e9-87e0-1b619d03d286.png"
+                        alt="Android">
+                </a>
+                <a href="#" class="download_link-item">
+                    <img src="https://user-images.githubusercontent.com/51093088/68205391-3d20ef00-ffdb-11e9-8b03-b5b172da1155.png"
+                        alt="Windows">
+                </a>
+                <p class="download_text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
         </div>
-        <span class="dowload_text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
     </section>
 
     <section class="advantages">
@@ -59,14 +75,15 @@
                 <p class="advantages_item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
                     заводите новых</p>
             </li>
+            <li class="advantages_item">
+                <img src="https://user-images.githubusercontent.com/51093088/68207337-c2a69e00-ffdf-11e9-890a-d3571c55bc7a.png"
+                    alt="phone">
+            </li>
         </ul>
+
     </section>
 
     <section class="reviews">
-        <input type="radio" name="review" id="first-review">
-        <input type="radio" name="review" id="second-review">
-        <input type="radio" name="review" id="third-review">
-
         <ul class="reviews_list">
             <li class="reviews_item">
                 <p class="reviews_item-name">Николай Петров</p>
@@ -87,13 +104,13 @@
                     фотографии!»</p>
             </li>
         </ul>
+
+        <input type="radio" name="review" id="first-review">
+        <input type="radio" name="review" id="second-review">
+        <input type="radio" name="review" id="third-review">
     </section>
 
     <section class="price">
-        <input type="radio" name="price_item" id="econom">
-        <input type="radio" name="price_item" id="standart">
-        <input type="radio" name="price_item" id="plus">
-
         <table class="price_table">
             <tr class="price_table-row">
                 <th class="price_table-header">Эконом 1,5 USD</th>
@@ -102,20 +119,24 @@
             </tr>
             <tr class="price_table-row">
                 <td class="price_table-data">Розовый фильтр</td>
-                <td class="price_table-data">Смайлики</td>
-                <td class="price_table-data">Комментарии</td>
+                <td class="price_table-data">Розовый фильтр</td>
+                <td class="price_table-data">Розовый фильтр</td>
             </tr>
             <tr class="price_table-row">
-                <td class="price_table-data">Розовый фильтр</td>
                 <td class="price_table-data">Смайлики</td>
-                <td class="price_table-data">Комментарии</td>
+                <td class="price_table-data">Смайлики</td>
+                <td class="price_table-data">Смайлики</td>
             </tr>
             <tr class="price_table-row">
-                <td class="price_table-data">Розовый фильтр</td>
-                <td class="price_table-data">Смайлики</td>
+                <td class="price_table-data">Комментарии</td>
+                <td class="price_table-data">Комментарии</td>
                 <td class="price_table-data">Комментарии</td>
             </tr>
         </table>
+
+        <input type="radio" name="price_item" id="econom">
+        <input type="radio" name="price_item" id="standart">
+        <input type="radio" name="price_item" id="plus">
     </section>
 
     <footer class="footer">

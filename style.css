@@ -1,0 +1,291 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+.header {
+  background-color: #283645;
+  width: 320px;
+  margin: 0 auto;
+}
+.header_logo {
+  display: block;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  /*
+    &::after {
+        content: "";
+        border-bottom: 13px double #fff;
+        border-top: 4px solid #fff; 
+        height: 5px;
+        width: 50px;
+        display: inline-block;
+        position: absolute;
+    }*/
+}
+.header_logo-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header_navigation-list {
+  padding: 20px 0;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+.header_navigation-list:last-child {
+  border-bottom: 1px solid #000;
+}
+.header_navigation-item {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 660px) {
+  .header {
+    width: 660px;
+  }
+  .header_logo {
+    height: 110px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .header_logo {
+    width: 160px;
+  }
+  .header_navigation {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_navigation-list {
+    padding: 0;
+    border: none;
+  }
+  .header_navigation-list:last-child {
+    border: none;
+  }
+  .header_navigation-item {
+    text-transform: none;
+    font-weight: 400;
+  }
+}
+.download {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #1d2631;
+  color: #fff;
+}
+.download_image {
+  height: 455px;
+  overflow: hidden;
+  background-image: url("https://user-images.githubusercontent.com/51093088/68115160-cb787080-ff08-11e9-8d80-f008bbe7d652.png");
+  margin-bottom: 30px;
+}
+.download_header {
+  display: none;
+}
+.download_button {
+  background-color: transparent;
+  color: #fff;
+  font: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.download_button:hover,
+.download_button:focus {
+  background-color: #fff;
+  color: #1d2631;
+  outline: none;
+}
+.download_button:active {
+  opacity: 0.3;
+  outline: none;
+}
+.download_links {
+  padding: 30px 45px;
+}
+.download_link-item:hover,
+.download_link-item:focus {
+  opacity: 0.5;
+  outline: none;
+}
+.download_link-item:active {
+  opacity: 0.2;
+  outline: none;
+}
+.download_link-item + .download_link-item {
+  margin-left: 35px;
+}
+.download_text {
+  margin: 0;
+  margin-top: 25px;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .download {
+    width: 660px;
+    position: relative;
+  }
+  .download_image {
+    height: 620px;
+    background-image: url("https://user-images.githubusercontent.com/51093088/68393063-2fef3600-017c-11ea-94c0-9a2895c838da.png"), url("https://user-images.githubusercontent.com/51093088/68392919-e56db980-017b-11ea-85d2-4dfeb9590143.png");
+    background-repeat: no-repeat;
+    background-position: center bottom, center center;
+  }
+  .download_information {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+  .download_header {
+    display: block;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 50px;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .download_button {
+    margin: 0;
+  }
+  .download_links {
+    padding: 45px 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .download {
+    width: auto;
+    height: 855px;
+    padding: 0 120px;
+    background-image: url("https://user-images.githubusercontent.com/51093088/68402731-d7746480-018c-11ea-821a-4ebc65e99785.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .download_image {
+    width: auto;
+    height: 855px;
+    background-image: url("https://user-images.githubusercontent.com/51093088/68402841-038fe580-018d-11ea-8fa1-408431b69f43.png");
+    background-size: auto;
+    background-position: right bottom;
+  }
+  .download_header {
+    font-size: 50px;
+    width: 255px;
+    line-height: 60px;
+  }
+}
+.advantages_header,
+.footer_text {
+  font-size: 24px;
+  font-weight: 200;
+  color: #1d2631;
+  text-align: center;
+}
+.advantages_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.advantages_item {
+  padding: 0 20px;
+}
+.advantages_item:first-child {
+  padding-top: 50px;
+}
+.advantages_item + .advantages_item {
+  padding-top: 35px;
+}
+.advantages_item-header {
+  font-weight: 700;
+}
+.advantages_item-text {
+  font-size: 14px;
+}
+.reviews {
+  padding-top: 50px;
+}
+.reviews_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.reviews_item {
+  padding: 0 20px;
+}
+.reviews_item-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+.reviews_item-text {
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 25px;
+}
+.price {
+  background-color: #f2f2f2;
+}
+.price_table-header {
+  font-size: 18px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #1d2631;
+  color: #fff;
+}
+.price_table-data {
+  background-color: #fff;
+  color: #1d2631;
+  font-size: 14px;
+}
+.footer_list {
+  list-style: none;
+  text-align: center;
+}
+.footer_item-text {
+  font-size: 18px;
+  color: #1d2631;
+  font-weight: 700;
+}
+.footer_item-info {
+  font-size: 24px;
+  font-weight: 200;
+  color: #d22856;
+}
