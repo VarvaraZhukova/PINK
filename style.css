@@ -727,10 +727,17 @@ body {
     padding-bottom: 15px;
     padding-top: 65px;
   }
+  .footer_information-item:first-child {
+    order: 1;
+  }
+  .footer_information-item:nth-child(2) {
+    order: 3;
+  }
   .footer_information-item:last-child {
     width: 220px;
     padding-top: 0;
     flex-grow: 0;
+    order: 2;
   }
   .footer_map {
     height: 500px;

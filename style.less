@@ -897,11 +897,24 @@ body {
     }
 
     .footer_information-item {
+        &:first-child {
+            order: 1;
+        }
+
+        &:nth-child(2) {
+            order: 3;
+        }
+        
         &:last-child {
             width: 220px;
             padding-top: 0;
             flex-grow: 0;
+            order: 2;
         }
+    }
+
+    .footer_social {
+        padding: 65px 20px;
     }
 
     .footer_map {
