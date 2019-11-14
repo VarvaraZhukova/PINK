@@ -6,76 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PINK</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="index.html">
-            <img src="#" alt="logo" class="header_logo">
-        </a>
-        <ul class="header_navigation">
-            <li>
-                <a href="index.html" class="header_navigation-item">Главная</a>
-            </li>
-            <li>
-                <a href="photo.html" class="header_navigation-item">Фотографии</a>
-            </li>
-            <li>
-                <a href="#" class="header_navigation-item">Конкурс</a>
-            </li>
-            <li>
-                <a href="#" class="header_navigation-item">HTML Academy</a>
-            </li>
-        </ul>
-        <p class="header_information">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <div class="header_information">
+            <a href="index.html" class="header_logo">
+                <img src="https://user-images.githubusercontent.com/51093088/68088296-d252a500-fe6e-11e9-9c69-215e315f8ad9.png"
+                    alt="logo" class="header_logo-image">
+            </a>
+            <ul class="header_navigation">
+                <li class="header_navigation-list">
+                    <a href="index.html" class="header_navigation-item">Главная</a>
+                </li>
+                <li class="header_navigation-list">
+                    <a href="photo.html" class="header_navigation-item">Фотографии</a>
+                </li>
+                <li class="header_navigation-list">
+                    <a href="form.html" class="header_navigation-item">Конкурс</a>
+                </li>
+                <li class="header_navigation-list">
+                    <a href="#" class="header_navigation-item">HTML Academy</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <section class="information">
+        <p class="information_text">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </section>
 
     <section class="form">
         <p class="form_header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-            бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        <form action="https://echo.htmlacademy.ru">
+            бонусную карту! </p>
+        <p class="form_header header-hidden">Пожалуйста, заполните форму ниже:</p>
+        <form action="https://echo.htmlacademy.ru" class="form_wrapper">
             <fieldset class="form_full-name">
-                <label for="last-name" class="form_label">Фамилия:</label>
-                <input type="text" class="form_input" name="last-name" id="last-name" placeholder="Укажите фамилию *">
-
-                <label for="first-name" class="form_label">Имя:</label>
-                <input type="text" class="form_input" name="first-name" id="first-name"
-                    placeholder="Введите ваше имя *">
-
-                <label for="patronymic" class="form_label">Отчество:</label>
-                <input type="text" class="form_input" name="patronymic" id="patronymic"
-                    placeholder="Ну и отчество тоже">
+                <div class="full-name">
+                    <label for="last-name" class="form_label">Фамилия:</label>
+                    <input type="text" class="form_input" name="last-name" id="last-name" placeholder="Укажите фамилию *">
+                </div>
+                <div class="full-name">
+                    <label for="first-name" class="form_label">Имя:</label>
+                    <input type="text" class="form_input" name="first-name" id="first-name" placeholder="Введите ваше имя *">
+                </div>
+                <div class="full-name">
+                    <label for="patronymic" class="form_label">Отчество:</label>
+                    <input type="text" class="form_input" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                </div>
             </fieldset>
 
             <fieldset class="form_achievements">
                 <legend class="form_legend">Ваши безбашенные достижения в путешествии</legend>
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="selfi" checked>
                     <span class="form_item">Сделал селфи с акулой</span>
                 </label>
 
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="beach" checked>
                     <span class="form_item">Обгорел на пляже</span>
                 </label>
 
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="chak">
                     <span class="form_item">Видел Чака Норриса</span>
                 </label>
 
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="souvenir">
                     <span class="form_item">Накупил сувениров</span>
                 </label>
 
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="tower" checked>
                     <span class="form_item">Удержал башню</span>
                 </label>
 
-                <label>
+                <label class="form_achievements-label">
                     <input class="form_checkbox" type="checkbox" name="hotel">
                     <span class="form_item">Разгромил отель</span>
                 </label>
