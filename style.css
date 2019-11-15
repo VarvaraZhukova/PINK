@@ -5,32 +5,62 @@ body {
   line-height: 30px;
   margin: 0;
 }
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .header {
   background-color: #283645;
   width: 320px;
   margin: 0 auto;
 }
+.header_information-open {
+  position: relative;
+}
+.header_menu {
+  position: relative;
+}
 .header_logo {
   display: block;
   height: 70px;
-  width: 100%;
-  position: relative;
   padding: 0 20px;
-  /*
-    &::after {
-        content: "";
-        border-bottom: 13px double #fff;
-        border-top: 4px solid #fff; 
-        height: 5px;
-        width: 50px;
-        display: inline-block;
-        position: absolute;
-    }*/
+  position: relative;
 }
 .header_logo-image {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.header_toggle {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  background-color: transparent;
+  transform: translateY(-50%);
+  border: none;
+}
+.header_toggle::before,
+.header_toggle::after {
+  content: "";
+  display: block;
+  padding: 0;
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+}
+.header_toggle::before {
+  transform: rotate(45deg);
+}
+.header_toggle::after {
+  transform: rotate(-45deg);
 }
 .header_navigation {
   list-style: none;
@@ -738,6 +768,9 @@ body {
     padding-top: 0;
     flex-grow: 0;
     order: 2;
+  }
+  .footer_social {
+    padding: 65px 20px;
   }
   .footer_map {
     height: 500px;
