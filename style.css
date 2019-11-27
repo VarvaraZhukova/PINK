@@ -30,6 +30,7 @@ body {
 }
 .header_logo {
   display: block;
+  width: 100px;
   height: 70px;
   padding: 0 20px;
   position: relative;
@@ -43,24 +44,19 @@ body {
   position: absolute;
   right: 20px;
   top: 50%;
-  background-color: transparent;
   transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .header_toggle::before,
 .header_toggle::after {
   content: "";
-  display: block;
-  padding: 0;
-  width: 26px;
   height: 2px;
+  width: 20px;
   background-color: #fff;
-}
-.header_toggle::before {
-  transform: rotate(45deg);
-}
-.header_toggle::after {
-  transform: rotate(-45deg);
 }
 .header_navigation {
   list-style: none;
@@ -100,6 +96,9 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
   }
+  .main-nav-open {
+    display: flex;
+  }
   .header_information {
     width: 960px;
     margin: 0 auto;
@@ -109,6 +108,9 @@ body {
   }
   .header_logo {
     width: 160px;
+  }
+  .header_toggle {
+    display: none;
   }
   .header_navigation {
     width: 620px;
